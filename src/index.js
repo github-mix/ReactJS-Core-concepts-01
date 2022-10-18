@@ -11,21 +11,6 @@ root.render(
   </React.StrictMode>
 );
 
-const firstHead = React.createElement(
-    'h1',
-    {
-        style: {
-            textAlign: 'center'
-        }
-    },
-    'Created by React.createElement'
-)
-
-const firstHeadContainer = document.getElementById('firstHead');
-const firstHeadRoot = ReactDOM.createRoot(firstHeadContainer);
-
-firstHeadRoot.render(firstHead);
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
