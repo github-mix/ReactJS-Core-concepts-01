@@ -1,9 +1,13 @@
 import React from 'react'
 
 class GenreToggle extends React.Component {
-    state = {
-        selectedTabId: 0
-    };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            selectedTabId: 0
+        };
+    }
 
     handleClick = (selectedTabId) => {
         this.setState({
@@ -12,11 +16,11 @@ class GenreToggle extends React.Component {
     }
 
     render() {
-        const tabNames = ['All', 'Documentary', 'Comedy', 'Horror', 'crime'];
+        const tabNames = this.props.genres;
 
         return (
             <div className="genre-toggle">
-                {tabNames.map((tabName, i) => (
+                {tabNames?.length && tabNames.map((tabName, i) => (
                     <button key={i}
                             className={`large-padding ${this.state.selectedTabId === i ? 'active' : ''}`}
                             onClick={() => this.handleClick(i)}>

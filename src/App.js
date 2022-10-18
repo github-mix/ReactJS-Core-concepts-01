@@ -18,7 +18,7 @@ function App() {
                 <li><H1ByFunctionalComponent /></li>
                 <li><Counter /></li>
                 <li><SearchField /></li>
-                <li><GenreToggle /></li>
+                <li><GenreToggle genres={['All', 'Documentary', 'Comedy', 'Horror', 'crime']} /></li>
             </ul>
         </div>
     );
