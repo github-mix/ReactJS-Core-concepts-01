@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import H1ByReactCreateElement from './components/H1ByReactCreateElement';
 import H1ByReactComponent from './components/H1ByReactComponent';
 import H1ByReactPureComponent from './components/H1ByReactPureComponent';
