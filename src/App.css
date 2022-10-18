@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.large-padding {
+  padding: 20px;
+}
+
+.components-list {
+  padding: 0;
+  list-style: none;
+}
+.components-list > li:not(:first-child) {
+  margin-top: 40px;
+}
+
+.genre-toggle {
+  display: inline-block;
+  border: 1px solid lightgray;
+}
+.genre-toggle > button {
+  background: white;
+  border: none;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.genre-toggle > button:hover {
+  background: antiquewhite;
+}
+.genre-toggle > button.active {
+  border-color: orange;
+}
+
+.search-field {
+  display: inline-block;
+  text-align: left;
+}
