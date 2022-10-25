@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import H1ByReactCreateElement from './components/H1ByReactCreateElement';
+import H1ByReactComponent from './components/H1ByReactComponent';
+import H1ByReactPureComponent from './components/H1ByReactPureComponent';
+import H1ByFunctionalComponent from './components/H1ByFunctionalComponent';
+import Counter from './components/Counter';
+import SearchField from './components/SearchField';
+import GenreToggle from './components/GenreToggle';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <ul className="components-list">
+                <li><H1ByReactCreateElement /></li>
+                <li><H1ByReactComponent /></li>
+                <li><H1ByReactPureComponent /></li>
+                <li><H1ByFunctionalComponent /></li>
+                <li><Counter /></li>
+                <li><SearchField /></li>
+                <li><GenreToggle genres={['All', 'Documentary', 'Comedy', 'Horror', 'crime']} /></li>
+            </ul>
+        </div>
+    );
 }
 
 export default App;
